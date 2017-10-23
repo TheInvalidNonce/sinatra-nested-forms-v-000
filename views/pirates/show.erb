@@ -1,36 +1,16 @@
-<h1>
-<% @pirates.map do |pirate| %>
-<p>
-  Pirate Name: <%= pirate.name %>
-</p>
-<p>
-  Pirate Height: <%= pirate.height %>
-</p>
-<p>
-  Pirate Weight: <%= pirate.weight %>
-</p>
-<% end %>
-</h1>
+<h1>Pirate: </h1>
+ <div>
+  <h2>Name: <%= @pirate.name %></h2>
+  <h3>Weight: <%= @pirate.weight %></h3>
+  <h3>Height: <%= @pirate.height %></h3>
+ </div>
 
+<h1>Ships: </h1>
 
-<h2>
-<% @ships.map do |ship| %>
-<p>
-  Ship Name: <%= ship.name %>
-</p>
-<p>
-  Ship Type: <%= ship.type %>
-</p>
-<p>
-  Ship Booty: <%= ship.booty %>
-</p>
-<% end %>
-</h2>
-
-
-
-<!-- <h2>
-  <%= @ships[1].name %>
-  <%= @ships[1].type %>
-  <%= @ships[1].booty %>
-</h2> -->
+<div>
+  <% @ships.map do |one| %>
+    <h2>Name: <%= one.name %></h2>
+    <h3>Type: <%= one.type %></h3>
+    <h3>Booty: <%= one.booty %></h3>
+  <% end %>
+</div>
