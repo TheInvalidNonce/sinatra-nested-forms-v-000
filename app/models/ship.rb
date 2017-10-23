@@ -19,5 +19,5 @@ class Ship
 
 
 
-  
+
 end
